@@ -1,5 +1,10 @@
 <?php
 
-$greeting = "Hello World";
+$greeting = 'Hello World';
 
-require 'Index.view.php';
+function read_text($text)
+{
+    $text = strtolower($text);
+}
+
+require 'index.view.php';
