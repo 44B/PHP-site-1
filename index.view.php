@@ -15,18 +15,20 @@
 
     <h1>Active Password Checker</h1>
     <div id="parentContainer">
-        <form action="index.view.php" method="get">
-            <h3>Password:</h3>
-            <input type="password" name="password">
-            <input type="submit"></input>
+        <form action="index.view.php" method="get" id="form">
+            <input type="password" name="password" id="textbox">
+            <button type="submit">Check Password</button>
         </form>
     </div>
 </body>
 
 <?php
-$checkPassword =  $_GET["password"];
-$error = "0";
-include "index.php";
+if (array_key_exists("password", $_GET)) {
+    $checkPassword =  $_GET["password"];
+    $error = "0";
+    include "index.php";
+}
+
 ?>
 
 
