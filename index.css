@@ -1,0 +1,8 @@
+#body {
+    background-color: #41B3A3;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
